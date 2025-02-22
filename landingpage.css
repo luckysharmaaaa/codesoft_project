@@ -1,0 +1,413 @@
+:root{
+    --pink:#
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; 
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;    
+}
+html{
+    font-size: 62%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+header{
+    position: fixed;
+    top:0; left:0;right:0;
+    background-color: white;
+    padding: 0.4rem 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    color:purple;
+    font-size: 20px;
+    font-weight: 900;
+    font-weight: bold;
+}
+header span{
+    color: #DE3163;
+}
+header .navbar a{
+    color: purple;
+    font-size: 14px;
+    padding: 0 0.5rem;
+    font-weight: 700;
+}
+header .navbar a:hover{
+    color:green;
+}
+header .icons{
+    font-size: 15px;
+}
+header #toggler{
+    display: none;
+}
+header .fa-bars{
+    color: green;
+    font-size: 1rem;
+    border-radius: .0.1em;
+    cursor: pointer;
+    display: none;
+}
+/* -----------------------section page start ---------------*/
+section{
+    padding:  3rem 9%;
+    align-items: center;  
+}
+.home{
+   display: flex;
+   min-height: 100vh;
+   background-image: url(/pic/new.jpg);
+   background-size: cover;
+   background-position:inherit;
+   background-repeat: no-repeat;
+}
+.content{
+max-width: 55rem;
+}
+.content h1{
+    color: purple;
+    font-size: 40px;
+}
+.content h6{
+    color:green;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+}
+.content p{
+    color:#DE3163;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: bold;
+    line-height: 19px;
+    font-style: italic;
+}
+button{
+    display: inline-block;
+    margin-top: 2rem;
+    border-radius: 50px;
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    font-weight: 200;
+    text-decoration: none;
+    background-color: rgb(230, 110, 230);
+    cursor: pointer;
+}
+button:hover{
+    background-color: #DE3163;
+}
+/* ---------------------about section start-------------------------- */
+#about{
+    padding-top:30px ;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-right:70px;
+    margin-left: 50px;
+}
+.about-videos video{
+    width: 450px;
+    border-radius: 10px;
+    border: 5px solid #916b8b;
+    margin-bottom: 40px;
+    margin-top: 40px;   
+} 
+#about-us{
+    font-weight:bold;    
+    font-size: 30px;
+    margin-top: 10px;
+    width: 100%;
+    color:purple;
+    text-align: center;
+    background-color: #DDA0DD;
+}
+#about-us span{
+    color: #DE3163;
+}
+.about-para{
+    height: 250px;
+    width: 660px;
+    font-size: 14px;
+    color: rgb(24, 22, 22);}
+p{
+    margin-top: 55px;
+    line-height: 25px;
+    font-style: italic;
+    font-weight: 500px;
+    color: black;
+}
+/*----------------------------- icons-container----------------------------- */
+.icons-container{
+    display: flex;
+    gap: 2rem;
+    background-color: white;
+    margin-top: 10px;
+}
+.icons-container .icons{
+    border: 2px solid black;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex:10px;
+}
+.icons img{ 
+    height: 100px; 
+    padding-top: 1px;
+    width: 100px;
+}
+.icons h4{
+    color:purple;
+    font-size: 10px;
+}
+.icons span{
+    color: #DE3163;
+    font-weight: bold;
+}
+ /* ------------------------products latest--------------------------------- */
+.products .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-left: 30px;   
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.products .box-container.heading{
+    color: purple;
+}
+.products .box-container .box{
+    flex:2 1 8rem;
+    border-radius: 10px;
+}
+.box-container img{
+    height: 200px;
+    width: 250px;
+    overflow: hidden;
+}
+.box-container img:hover{
+    transform: scale(1.1);
+}
+.products .headings{
+    color: purple;
+    text-align: center;
+    background-color: #DDA0DD;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bold;
+}
+.products span{
+    color: #DE3163;
+}
+.products .cart-btn{
+    color:grey;
+}
+/* ----------------------------contact selection----------------------- */
+#contact{
+    margin-top: 20px;
+}
+#contact h6{
+    color: purple;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #DDA0DD;
+    text-align: center;  
+}
+#contact h6 span{
+    color: #DE3163;
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    font-size: 10px;
+}
+.footer-box {
+    background-color:pink;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 300px;
+}
+.footer-box p{
+    font-size: 15px;
+    margin-top: 10px;
+    color: #DE3163;
+}
+.footer-box h3 {
+    color:purple;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.footer-box input {
+    border: 2px solid #916b8b;
+    color:#DE3163;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 10px;
+    width: 220px;
+}
+.linkedin a {
+    color:#DE3163;
+    text-decoration: none;
+    font-size: 20px;
+}
+.linkedin a:hover {
+    text-decoration: underline;
+    color:#916b8b;
+}
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 15px;
+    color: rgb(201, 45, 45);
+    margin-left: 500px;
+}
+.footer-bottom span {
+    color: purple;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+/*---------------------media quiries ----------------------*/
+@media(max-width:991px){
+    html{
+        font-size: 50%;
+    }
+    header{
+        height: 40px;
+    } 
+    section{
+        padding: 1rem;
+    }  
+    .home{
+         background-position:left;
+         text-align: center;
+    }      
+}
+
+@media(max-width:786px){
+    
+    header .logo{
+        font-size: 10px;
+    }
+    header .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top:100%; left:0;right: 0; 
+        text-align: center;
+    }
+    .home h1{
+        font-size:2rem;
+    }
+    .home h6{
+        font-size:1.8rem;
+    }
+    .home p{
+        font-size: 1rem;
+    }
+    .about h2{
+        font-size: 10px;
+    }
+    .about-videos video{
+        width: 250px;
+    }
+    .row{
+        margin-left: 10px;
+    }
+    .about-para{
+        font-size: 8px;
+        color: rgb(24, 22, 22);
+    }
+    p{
+        margin-top: 1px;
+        line-height: 10px;
+        font-style: italic;
+        color: black;
+    }
+    .icons-container{
+        display:inline-block;
+        margin-top: 1px;
+    }
+    .icons h4{
+        font-size: 1rem;
+    }
+    .icons span{
+        font-size: 1rem;
+    }
+    .icons img{
+        height: 50px;
+        display: block;
+    }
+    .icons{
+        text-align: center;
+        margin: 50px auto;
+        font-size: 24px;
+    }
+
+    .icpns-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .icons-bottom {
+        text-align: center;
+        margin-left: 0;
+        padding: 10px;
+    }
+    .box-container img{
+        height: 60px;
+        width: 60px;
+    }
+    #contact {
+        text-align: center;
+        margin: 50px auto;
+        font-size: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-left: 0;
+        padding: 10px;
+    }
+    
+} 
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 1rem;
+    }
+    .products .headings{
+        font-size: 2rem;
+    }
+} 
